@@ -328,7 +328,11 @@ app.get('/api/health', (req, res) => {
 });
 
 // 启动服务器
-app.listen(PORT, () => {
-  console.log(`🐾 Animal Pedia server is running on http://localhost:${PORT}`);
-  console.log(`📁 Static files served from: ${path.join(__dirname, 'public')}`);
-});
+if (require.main === module) {
+  app.listen(PORT, () => {
+    console.log(`🐾 Animal Pedia server is running on http://localhost:${PORT}`);
+    console.log(`📁 Static files served from: ${path.join(__dirname, 'public')}`);
+  });
+} else {
+  module.exports = app;
+}
