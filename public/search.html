@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>搜索结果 - Animal Pedia</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐾</text></svg>">
+</head>
+<body data-page="search">
+  <!-- 导航栏 -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-icon">🐾</span>
+        <span>Animal Pedia</span>
+      </a>
+      
+      <ul class="nav-menu" id="mobileMenu">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">首页</a>
+        </li>
+        <li class="nav-item">
+          <a href="search.html" class="nav-link">搜索</a>
+        </li>
+        <li class="nav-item">
+          <a href="profile.html" class="nav-link">我的</a>
+        </li>
+      </ul>
+      
+      <div class="nav-user" id="navUser">
+        <a href="login.html" class="btn-login">登录</a>
+        <a href="register.html" class="btn-register">注册</a>
+      </div>
+      
+      <button class="mobile-menu-btn" id="mobileMenuBtn">
+        ☰
+      </button>
+    </div>
+  </nav>
+
+  <!-- 主内容区 -->
+  <main class="main-container">
+    <div class="search-section">
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="searchInput" class="search-input" placeholder="搜索动物名称、分类、栖息地...">
+        <button class="search-btn" id="searchBtn">搜索</button>
+      </div>
+    </div>
+
+    <div class="search-results-header">
+      <h1 style="font-size: 1.75rem; color: var(--primary-dark); margin-bottom: 0.5rem;">
+        搜索结果：<span id="searchKeyword" style="color: var(--primary-color);"></span>
+      </h1>
+      <p class="search-results-count" id="resultsCount">正在搜索...</p>
+    </div>
+
+    <!-- 动物卡片网格 -->
+    <div class="animals-grid" id="animalsGrid">
+      <!-- 动物卡片由JS动态生成 -->
+    </div>
+
+    <div style="margin-top: 2rem; text-align: center;">
+      <a href="index.html" style="color: var(--primary-color); font-weight: 600;">← 返回首页</a>
+    </div>
+  </main>
+
+  <!-- 页脚 -->
+  <footer class="footer" id="footer">
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

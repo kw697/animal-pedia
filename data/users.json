@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1780981777873,
+    "username": "testuser",
+    "password": "$2a$10$AGH8DXcCKk0UE3h71i8cUum2ziquC381zWp1ZDEEgMcXZlSIFkZDG",
+    "favorites": [
+      1
+    ],
+    "createdAt": "2026-06-09T05:09:37.873Z"
+  },
+  {
+    "id": 1780983108791,
+    "username": "222",
+    "password": "$2a$10$zNUAAYSJDDtyJe20XDAKaetp52oHs/i/Xggs1ntJhBSQGlxpBof0C",
+    "favorites": [],
+    "createdAt": "2026-06-09T05:31:48.791Z"
+  }
+]

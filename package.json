@@ -1,0 +1,19 @@
+{
+  "name": "animal-pedia",
+  "version": "1.0.0",
+  "description": "一个精美的动物图鉴网站，包含22种动物的详细介绍，支持搜索、收藏和用户系统",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": ["animal", "encyclopedia", "pedia"],
+  "author": "Animal Pedia Team",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "bcryptjs": "^2.4.3",
+    "express-session": "^1.17.3",
+    "cors": "^2.8.5"
+  }
+}
